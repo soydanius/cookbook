@@ -1,0 +1,43 @@
+.logo {
+  width: 7em;
+  height: 7em;
+}
+header {
+  background-color: aquamarine;
+}
+.recipes {
+  min-height: 250px;
+}
+.recipe {
+  min-width: 350px;
+  min-height: 350px;
+  border: 1px solid red;
+  background-image: url('images/kochen_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+}
+.recipe:nth-child(odd) {
+  background-color: teal;
+  margin-bottom: 1px;
+}
+.recipe > h3 {
+  opacity: 0;
+  transition: opacity 0.2s ease 0s;
+}
+.recipe:hover > h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+}
+/* recipe image 642x428px */
+.recipe > img {
+  background-color: red;
+}
+.info {
+  min-height: 200px;
+  background-color: beige;
+}
+footer {
+  min-height: 50px;
+  background-color: burlywood;
+}
