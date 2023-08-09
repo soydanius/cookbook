@@ -1,43 +1,52 @@
+:root {
+  /* palette 1 */
+  /* --cb-color1: #e63946;
+  --cb-color2: #f1faee;
+  --cb-color3: #a8dadc;
+  --cb-color4: #457b9d;
+  --cb-color5: #1d3557; */
+
+  /* palette 2 */
+  --cb-color1: #f77039;
+  --cb-color2: #f3c7a0;
+  --cb-color3: #eef0d0;
+  --cb-color4: #1d4989;
+  --cb-color5: #2e609e;
+}
+body,
+header,
+.navbar .container,
+main,
+footer {
+  background-color: var(--cb-color2);
+}
+header {
+  padding: 10px 0;
+}
 .logo {
   width: 7em;
   height: 7em;
-}
-header {
-  background-color: aquamarine;
+  border-radius: 100px;
 }
 .recipes {
   min-height: 250px;
 }
 .recipe {
-  min-width: 350px;
-  min-height: 350px;
-  border: 1px solid red;
-  background-image: url('images/kochen_icon.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
+  margin: 1rem;
+  min-width: 320px;
+  max-width: 350px;
 }
-.recipe:nth-child(odd) {
-  background-color: teal;
-  margin-bottom: 1px;
+.recipe img {
+  opacity: 1;
 }
-.recipe > h3 {
+.recipe .card-title {
   opacity: 0;
   transition: opacity 0.2s ease 0s;
 }
-.recipe:hover > h3 {
+.recipe:hover .card-title {
   opacity: 1;
   transition: opacity 0.5s ease 0s;
 }
-/* recipe image 642x428px */
-.recipe > img {
-  background-color: red;
-}
-.info {
-  min-height: 200px;
-  background-color: beige;
-}
-footer {
-  min-height: 50px;
-  background-color: burlywood;
+.list {
+  border: 1px solid var(--cb-color4);
 }
