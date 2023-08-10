@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <!-- Header with responsive navbar-->
     <header>
       <div class="container align-items-end">
         <a class="navbar-brand" href="#"
@@ -36,36 +37,61 @@
         </nav>
       </div>
     </header>
+    <!-- Page content-->
     <main>
-      <div class="row">
-        <div class="col-11">
-          <h1>Title</h1>
-          <h2>Do we need a short punchline or explanation to what this food actually is?</h2>
+      <div class="container recipe-container p-5 rounded">
+        <div class="row">
+          <div class="col-11">
+            <h1 class="h1">Käsekuchen</h1>
+          </div>
+          <div class="col-1">Share element</div>
         </div>
-        <div class="col-1">Share element</div>
-      </div>
-      <div class="row">
-        <div class="col">IMAGE<img source="#" alt="Pic_of_food" /></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Description</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.</p>
+        <div class="row">
+          <div class="col">
+            <img
+              class="rounded recipe-img"
+              src="images/rezept2_polpettine-di-tonno_2.jpeg"
+              alt="Pic_of_food"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Ingredients:</h3>
-          <table>
-            Ingerdients Table
-          </table>
+        <div class="row">
+          <div class="col">
+            <p class="blockquote">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Instructions</h3>
-          <p>Instructions</p>
-          <!-- Optional: collapsable content - to be done when enough time available -->
+        <div class="row">
+          <div class="col">
+            <h3>Zutaten</h3>
+            <table class="table table-striped rounded">
+              <tbody>
+                <tr>
+                  <td class="text-end w-25">Menge1</td>
+                  <td>Zutat1</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">Menge2</td>
+                  <td>Zutat2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Zubereitung</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis, quaerat
+              tempore iusto beatae soluta aut dolores natus dolorem et vel libero perferendis!
+              Possimus at magnam quam commodi mollitia ducimus, inventore reiciendis aspernatur
+              impedit nesciunt magni hic quae distinctio quis saepe eos sit maxime. Aliquid, ratione
+              consequatur? Sequi molestias facilis saepe laboriosam, maiores quisquam voluptatum
+              corporis beatae hic culpa esse.
+            </p>
+            <!-- Optional: collapsable content - to be done when enough time available -->
+          </div>
         </div>
       </div>
     </main>
