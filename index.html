@@ -23,20 +23,22 @@
     <header>
       <div class="container align-items-end">
         <a class="navbar-brand" href="#"
-          ><img src="images/kochen_icon.png" class="logo" />
+          ><img src="images/logo.svg" class="logo" />
           <h3 class="d-inline-flex">Cookbook</h3></a
         >
         <nav class="navbar navbar-expand justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#">Rezepte</a>
-            </li>
-            <li class="nav-item px-3"><a class="nav-link" href="#">Empfehlung</a></li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#">Magazin</a>
+              <a class="nav-link" aria-current="page" href="./index.html#rezepte">Rezepte</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Mein Bereich</a>
+              <a class="nav-link active" href="./index.html#empfehlung">Empfehlung</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./404.html">Magazin</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./login.html">Mein Bereich</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +47,7 @@
     <!-- Page content-->
     <main class="m-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
+        <div class="col" id="Empfehlung">
           <div class="card text-bg-dark shadow-lg recipe">
             <img
               src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
@@ -63,13 +65,13 @@
         <div class="col">
           <div class="card text-bg-dark text-center recipe">
             <img
-              src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
+              src="images/rezept2_polpettine-di-tonno_1.jpeg"
               class="card-img"
-              alt="Picture of a nice piece of cheescake"
+              alt="Picture of a Polpettine di tonno on a plate"
             />
             <div class="card-img-overlay text-center">
               <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
-                Oma´s Käsekuchen
+                Polpettine di tonno
               </h5>
             </div>
           </div>
@@ -78,13 +80,13 @@
         <div class="col">
           <div class="card text-bg-dark text-center recipe">
             <img
-              src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
+              src="images/rezept3_avocado-quesadillas_1.jpeg"
               class="card-img"
-              alt="Picture of a nice piece of cheescake"
+              alt="Picture of a Avocado Quesadillas on a plate, quartered"
             />
             <div class="card-img-overlay text-center">
               <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
-                Oma´s Käsekuchen
+                Avocado Quesadillas
               </h5>
             </div>
           </div>
@@ -93,13 +95,13 @@
         <div class="col">
           <div class="card text-bg-dark text-center recipe">
             <img
-              src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
+              src="images/rezept4_rinderrouladen-klassisch_.jpeg"
               class="card-img"
               alt="Picture of a nice piece of cheescake"
             />
             <div class="card-img-overlay text-center">
               <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
-                Oma´s Käsekuchen
+                Rinderrouladen klassisch
               </h5>
             </div>
           </div>
@@ -108,13 +110,13 @@
         <div class="col">
           <div class="card text-bg-dark text-center recipe">
             <img
-              src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
+              src="images/rezept5_gyros-nudelauflauf_1.jpeg"
               class="card-img"
               alt="Picture of a nice piece of cheescake"
             />
             <div class="card-img-overlay text-center">
               <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
-                Oma´s Käsekuchen
+                Gyros-Nudelauflauf in Metaxasoße
               </h5>
             </div>
           </div>
@@ -123,22 +125,24 @@
         <div class="col">
           <div class="card text-bg-dark text-center recipe">
             <img
-              src="images/rezept1_k%C3%A4sekuchen_1.jpeg"
+              src="images/rezept6_bier-1.jpeg"
               class="card-img"
               alt="Picture of a nice piece of cheescake"
             />
             <div class="card-img-overlay text-center">
               <h5 class="card-title position-absolute bottom-0 start-50 translate-middle-x">
-                Oma´s Käsekuchen
+                Kaltes Bier
               </h5>
             </div>
           </div>
         </div>
       </div>
-      <div class="mt-5 list">
-        <h4>Rezeptliste</h4>
-        <p>Hier eine Auswahl an aktuellen Rezepten</p>
-        <table class="table table-hover">
+      <div class="list mt-5 rounded-4 p-5" id="rezepte">
+        <div class="text-center bg-light rounded-4">
+          <h4>Rezeptliste</h4>
+          <p>Hier eine Auswahl an aktuellen Rezepten</p>
+        </div>
+        <table class="table table-striped table-hover rounded-4 p-5 overflow-hidden">
           <thead>
             <tr>
               <th scope="col">Rezept</th>
@@ -148,9 +152,9 @@
           </thead>
           <tbody>
             <tr>
-              <td scope="row">Oma´s Käsekuchen</td>
+              <td scope="row">Leckerer Käsekuchen von Oma</td>
 
-              <td>Otto</td>
+              <td>C-Maus</td>
               <td>
                 <img src="images/star-fill.svg" />
                 <img src="images/star-fill.svg" />
@@ -159,18 +163,8 @@
               </td>
             </tr>
             <tr>
-              <td scope="row">Polpettine di Tonno</td>
-              <td>Otto</td>
-              <td>
-                <img src="images/star-fill.svg" />
-                <img src="images/star-fill.svg" />
-                <img src="images/star-half.svg" />
-                <img src="images/star.svg" />
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">Avocado Quesadillas</td>
-              <td>Otto</td>
+              <td scope="row">Polpettine di tonno</td>
+              <td>Dolce-Vita</td>
               <td>
                 <img src="images/star-fill.svg" />
                 <img src="images/star-fill.svg" />
@@ -180,7 +174,7 @@
             </tr>
             <tr>
               <td scope="row">Avocado Quesadillas</td>
-              <td>Otto</td>
+              <td>energybird</td>
               <td>
                 <img src="images/star-fill.svg" />
                 <img src="images/star-fill.svg" />
@@ -189,8 +183,88 @@
               </td>
             </tr>
             <tr>
-              <td scope="row">Avocado Quesadillas</td>
-              <td>Otto</td>
+              <td scope="row">Rinderrouladen klassisch</td>
+              <td>Shinara</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Gyros-Nudelauflauf in Metaxasoße</td>
+              <td>TF210308</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Kaltes Bier</td>
+              <td>Piotr</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Paprika-Wok mit Rind</td>
+              <td>KlaraDonna</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Rindergeschnetzeltes "Asia-Art"</td>
+              <td>monhe</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Fish Makhanwala</td>
+              <td>Dialog</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Schnelles Spinat-Kichererbsen-Gericht</td>
+              <td>agiagi2</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Rote Linsen-Kokos-Suppe</td>
+              <td>Ergobiene</td>
+              <td>
+                <img src="images/star-fill.svg" />
+                <img src="images/star-fill.svg" />
+                <img src="images/star-half.svg" />
+                <img src="images/star.svg" />
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Veganer Schokokuchen</td>
+              <td>EulesBakery</td>
               <td>
                 <img src="images/star-fill.svg" />
                 <img src="images/star-fill.svg" />
