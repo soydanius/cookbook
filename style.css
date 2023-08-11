@@ -39,9 +39,6 @@ header {
   opacity: 1;
   transition: opacity 0.5s ease 0s;
 }
-.list {
-  background-color: var(--cb-color4);
-}
 form {
   width: 500px;
   background-color: var(--cb-color3);
