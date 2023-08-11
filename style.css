@@ -59,3 +59,15 @@ form {
 .recipe-img {
   width: 100%;
 }
+
+@media screen and (max-width: 1250px) {
+  .recipe-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-container {
+    width: 90%;
+  }
+}

@@ -18,20 +18,22 @@
     <header>
       <div class="container align-items-end">
         <a class="navbar-brand" href="#"
-          ><img src="images/kochen_icon.png" class="logo" />
+          ><img src="images/logo.svg" class="logo" />
           <h3 class="d-inline-flex">Cookbook</h3></a
         >
         <nav class="navbar navbar-expand justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#">Rezepte</a>
-            </li>
-            <li class="nav-item px-3"><a class="nav-link" href="#">Empfehlung</a></li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#">Magazin</a>
+              <a class="nav-link" aria-current="page" href="./index.html#rezepte">Rezepte</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Mein Bereich</a>
+              <a class="nav-link active" href="./index.html#empfehlung">Empfehlung</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./404.html">Magazin</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./login.html">Mein Bereich</a>
             </li>
           </ul>
         </nav>
@@ -39,32 +41,78 @@
     </header>
     <!-- Page content-->
     <main>
-      <div class="container recipe-container p-5 rounded">
-        <div class="row">
+      <div class="container recipe-container p-5">
+        <div class="row pb-2">
           <div class="col-11">
             <h1 class="h1">Käsekuchen</h1>
           </div>
           <div class="col-1">Share element</div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img
-              class="rounded recipe-img"
-              src="images/rezept2_polpettine-di-tonno_2.jpeg"
-              alt="Pic_of_food"
-            />
+        <div class="row pb-2">
+          <div id="carouselExampleIndicators" class="carousel slide recipe-img" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="images/rezept1_käsekuchen_1.jpeg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/rezept1_käsekuchen_2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/rezept1_käsekuchen_3.jpeg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="row">
+        <div class="row pb-4">
           <div class="col">
             <p class="blockquote">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row pb-2">
           <div class="col">
-            <h3>Zutaten</h3>
+            <h3 class="pb-1">Zutaten</h3>
             <table class="table table-striped rounded">
               <tbody>
                 <tr>
@@ -81,7 +129,7 @@
         </div>
         <div class="row">
           <div class="col">
-            <h3>Zubereitung</h3>
+            <h3 class="pb-1">Zubereitung</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis, quaerat
               tempore iusto beatae soluta aut dolores natus dolorem et vel libero perferendis!
