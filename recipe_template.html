@@ -40,13 +40,31 @@
       </div>
     </header>
     <!-- Page content-->
-    <main>
-      <div class="container recipe-container p-5">
-        <div class="row pb-2">
-          <div class="col-11">
-            <h1 class="h1">Käsekuchen</h1>
+    <main class="mt-4">
+      <div class="container recipe-container p-5 rounded">
+        <div class="row pb-2 align-items-center">
+          <div class="col-10">
+            <h1 class="h1 text-truncate">Käsekuchen</h1>
           </div>
-          <div class="col-1">Share element</div>
+          <div class="col-2 d-flex justify-content-end">
+            <button type="button" class="btn share-button">
+              <div class="d-flex align-items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                <span>Share</span>
+              </div>
+            </button>
+          </div>
         </div>
         <div class="row pb-2">
           <div id="carouselExampleIndicators" class="carousel slide recipe-img" data-bs-ride="true">
@@ -113,7 +131,7 @@
         <div class="row pb-2">
           <div class="col">
             <h3 class="pb-1">Zutaten</h3>
-            <table class="table table-striped rounded">
+            <table class="table table-striped rounded p-5 overflow-hidden">
               <tbody>
                 <tr>
                   <td class="text-end w-25">Menge1</td>

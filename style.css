@@ -60,6 +60,11 @@ form {
   width: 100%;
 }
 
+.share-button {
+  background-color: var(--cb-color1);
+  color: var(--cb-color2);
+}
+
 @media screen and (max-width: 1250px) {
   .recipe-container {
     width: 60%;
