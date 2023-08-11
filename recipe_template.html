@@ -1,55 +1,174 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <!-- Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <title>Cookbok: Rezept_template</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookbook</title>
   </head>
-
   <body>
-    <header> 
-      <!-- To be taken over from index.html-->
+    <!-- Header with responsive navbar-->
+    <header>
+      <div class="container align-items-end">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.svg" class="logo" />
+          <h3 class="d-inline-flex">Cookbook</h3></a
+        >
+        <nav class="navbar navbar-expand justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./index.html#rezepte">Rezepte</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link active" href="./index.html#empfehlung">Empfehlung</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./404.html">Magazin</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./login.html">Mein Bereich</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <div class="row">
-        <div class="col-11">
-          <h1>Title</h1>
-          <h2>Do we need a short punchline or explanation to what this food actually is?</h2>
+    <!-- Page content-->
+    <main class="mt-4">
+      <div class="container recipe-container p-5 rounded">
+        <div class="row pb-2 align-items-center">
+          <div class="col-10">
+            <h1 class="h1 text-truncate">Käsekuchen</h1>
+          </div>
+          <div class="col-2 d-flex justify-content-end">
+            <button type="button" class="btn share-button">
+              <div class="d-flex align-items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                <span>Share</span>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="col-1">Share element</div>
-      </div>
-      <div class="row">
-        <div class="col">IMAGE<img source="#" alt="Pic_of_food"></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Description</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.</p>
+        <div class="row pb-2">
+          <div id="carouselExampleIndicators" class="carousel slide recipe-img" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="images/rezept1_käsekuchen_1.jpeg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/rezept1_käsekuchen_2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="images/rezept1_käsekuchen_3.jpeg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Ingredients:</h3>
-          <table>Ingerdients Table</table>
+        <div class="row pb-4">
+          <div class="col">
+            <p class="blockquote">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Instructions</h3>
-          <p>Instructions</p>
-        <!-- Optional: collapsable content - to be done when enough time available -->
+        <div class="row pb-2">
+          <div class="col">
+            <h3 class="pb-1">Zutaten</h3>
+            <table class="table table-striped rounded p-5 overflow-hidden">
+              <tbody>
+                <tr>
+                  <td class="text-end w-25">Menge1</td>
+                  <td>Zutat1</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">Menge2</td>
+                  <td>Zutat2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="pb-1">Zubereitung</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis, quaerat
+              tempore iusto beatae soluta aut dolores natus dolorem et vel libero perferendis!
+              Possimus at magnam quam commodi mollitia ducimus, inventore reiciendis aspernatur
+              impedit nesciunt magni hic quae distinctio quis saepe eos sit maxime. Aliquid, ratione
+              consequatur? Sequi molestias facilis saepe laboriosam, maiores quisquam voluptatum
+              corporis beatae hic culpa esse.
+            </p>
+            <!-- Optional: collapsable content - to be done when enough time available -->
+          </div>
         </div>
       </div>
     </main>
-    <footer>
-      <!-- Optional - to be done when enough time available -->
-      <div></div>
+    <footer class="text-center p-5">
+      <p class="lead">&copy; Copyright 2023</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
