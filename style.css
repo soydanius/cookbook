@@ -10,7 +10,7 @@ body,
 .navbar .container,
 main,
 footer {
-  background-color: var(--cb-color2);
+  background-color: var(--cb-color3);
 }
 header {
   padding: 10px 0;
@@ -38,9 +38,6 @@ header {
 .recipe:hover img {
   opacity: 1;
   transition: opacity 0.5s ease 0s;
-}
-.list {
-  background-color: var(--cb-color4);
 }
 form {
   width: 500px;
