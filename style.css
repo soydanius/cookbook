@@ -1,20 +1,12 @@
 :root {
   /* palette 1 */
-  /* --cb-color1: #e63946;
+  --cb-color1: #e63946;
   --cb-color2: #f1faee;
   --cb-color3: #a8dadc;
   --cb-color4: #457b9d;
-  --cb-color5: #1d3557; */
-
-  /* palette 2 */
-  --cb-color1: #f77039;
-  --cb-color2: #f3c7a0;
-  --cb-color3: #eef0d0;
-  --cb-color4: #1d4989;
-  --cb-color5: #2e609e;
+  --cb-color5: #1d3557;
 }
 body,
-header,
 .navbar .container,
 main,
 footer {
@@ -24,27 +16,35 @@ header {
   padding: 10px 0;
 }
 .logo {
-  width: 7em;
-  height: 7em;
-  border-radius: 100px;
-}
-.recipes {
-  min-height: 250px;
+  width: 20%;
 }
 .recipe {
   margin: 1rem;
 }
 .recipe img {
-  opacity: 1;
+  opacity: 0.8;
 }
 .recipe .card-title {
+  background-color: var(--cb-color4);
+  border-radius: 10px;
+  padding: 1px;
   opacity: 0;
-  transition: opacity 0.2s ease 0s;
+  transition: opacity 0.5s ease 0s;
 }
 .recipe:hover .card-title {
   opacity: 1;
   transition: opacity 0.5s ease 0s;
 }
+.recipe:hover img {
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+}
 .list {
-  border: 1px solid var(--cb-color4);
+  background-color: var(--cb-color4);
+}
+form {
+  width: 500px;
+  background-color: var(--cb-color3);
+  padding: 25px;
+  border-radius: 20px;
 }
