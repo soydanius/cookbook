@@ -50,10 +50,10 @@
       <div class="container recipe-container p-5 rounded">
         <div class="row pb-2 align-items-center">
           <div class="col-10">
-            <h1 class="h1 text-truncate">Käsekuchen</h1>
+            <h1 id="recipeTitle" class="h1 text-truncate">Käsekuchen</h1>
           </div>
           <div class="col-2 d-flex justify-content-end">
-            <button type="button" class="btn share-button">
+            <button id="shareButton" type="button" class="btn share-button">
               <div class="d-flex align-items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -175,5 +175,14 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const shareButton = document.getElementById('shareButton');
+      const recipeTitle = document.getElementById('recipeTitle').innerHTML;
+      const documentURL = document.URL;
+
+      shareButton.addEventListener('click', () => {
+        alert(`${documentURL}\n\nThe ${recipeTitle} recipe has been shared!`);
+      });
+    </script>
   </body>
 </html>
