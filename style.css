@@ -13,10 +13,10 @@ footer {
   background-color: var(--cb-color3);
   font-family: 'Roboto';
 }
-.nav-brand h3 {
+h3.d-inline-flex {
   font-family: 'Pacifico';
   color: var(--cb-color2);
-  font-size: 3em;
+  font-size: 2.7em;
 }
 a.nav-link {
   font-family: 'Merriweather';
