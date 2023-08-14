@@ -13,7 +13,7 @@ footer {
   background-color: var(--cb-color3);
   font-family: 'Roboto';
 }
-.nav-brand {
+.nav-brand h3 {
   font-family: 'Pacifico';
   color: var(--cb-color2);
   font-size: 3em;
