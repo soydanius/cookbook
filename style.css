@@ -11,6 +11,18 @@ body,
 main,
 footer {
   background-color: var(--cb-color3);
+  font-family: 'Roboto';
+}
+.nav-brand {
+  font-family: 'Pacifico';
+  color: var(--cb-color2);
+  font-size: 3em;
+}
+a.nav-link {
+  font-family: 'Merriweather';
+  font-size: 1.7em;
+  color: var(--cb-color2);
+  letter-spacing: 1.5px;
 }
 header {
   padding: 10px 0;
