@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Pacifico&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookbook</title>
+  </head>
+  <body>
+    <!-- Header with responsive navbar-->
+    <header>
+      <div class="container align-items-end">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.svg" class="logo" />
+          <h3 class="d-inline-flex">Cookbook</h3></a
+        >
+        <nav class="navbar navbar-expand justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="./index.html#rezepte">Rezepte</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link active" href="./index.html#empfehlung">Empfehlung</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./404.html">Magazin</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./login.html">Mein Bereich</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Page content-->
+    <main class="mt-4">
+      <div class="container recipe-container p-5 rounded">
+        <div class="row pb-2 align-items-center">
+          <div class="col-10">
+            <h1 id="recipeTitle" class="h1 text-truncate recipe-title">Polpettine di tonno</h1>
+          </div>
+          <div class="col-2 d-flex justify-content-end">
+            <button id="shareButton" type="button" class="btn share-button">
+              <div class="d-flex align-items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-share-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  />
+                </svg>
+                <span>Share</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div id="carouselExampleIndicators" class="carousel slide recipe-img" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img
+                  src="images/rezept2_polpettine-di-tonno_1.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/rezept2_polpettine-di-tonno_2.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div class="col">
+            <p class="blockquote recipe-description">
+              Die leckersten Thunfischbällchen aller Zeiten
+            </p>
+          </div>
+        </div>
+        <div class="row pb-2">
+          <div class="col">
+            <h3 class="pb-1 recipe-heading">Zutaten</h3>
+            <table class="table table-striped rounded p-5 overflow-hidden recipe-ingredients">
+              <tbody>
+                <tr>
+                  <td class="text-end w-25">2 Dose/n</td>
+                  <td>Thunfisch, gut ausgedrückt</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">1 St.</td>
+                  <td>Kartoffel(n), gekocht und zerstampft (groß)</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">1 St.</td>
+                  <td>Ei(er)</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">2 El</td>
+                  <td>gehäuft Paniermehl</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">3 El</td>
+                  <td>gehäuft Remoulade</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">1 St.</td>
+                  <td>Zwiebel(n), fein gerieben</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">viel</td>
+                  <td>Petersilie, gehackt</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">n. B.</td>
+                  <td>Salz und Pfeffer</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">n. B.</td>
+                  <td>Brühepulver (gerne selbst gemachtes)</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">1 Spritzer</td>
+                  <td>Zitronensaft</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">1 El</td>
+                  <td>gehäuft Quark, optional</td>
+                </tr>
+                <tr>
+                  <td class="text-end w-25">n. B.</td>
+                  <td>Paniermehl zum Wälzen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="pb-1 recipe-heading">Zubereitung</h3>
+            <p class="recipe-instructions">
+              Aus allen Zutaten eine homogene Masse herstellen und mit Salz, Pfeffer und ggf. etwas
+              Brühepulver (gerne selbst gemacht!) abschmecken. Aus der Masse kleine Bällchen formen
+              und im Paniermehl wälzen. Eine ausreichend große Pfanne erhitzen und die Bällchen in
+              etwas Öl oder Pflanzencreme bei mittlerer Hitze von allen Seiten goldbraun braten. Gut
+              macht sich dazu in jedem Fall ein leckerer Dip und Salat nach Wahl. Tipp: Sollte die
+              Masse noch etwas zu weich anmuten, einfach etwas Paniermehl zufügen. Aber Vorsicht:
+              nicht zu viel, sonst wird das Ganze zu einer trockenen Angelegenheit! Also am besten
+              immer teelöffelweise herantasten. Selbiges gilt für den konträren Fall: sollte die
+              Masse etwas zu fest sein, ebenfalls mit Vorsicht noch etwas Remoulade zufügen.
+              Variation: Wer möchte, kann etwas Parmesan zur Masse geben. Auch klein geschnittene
+              schwarze Oliven und/oder Kapern sollen gut passen (allerdings habe ich das noch nicht
+              selbst ausprobiert). Die Polpettine sind sowohl warm als auch kalt jedes Mal wieder
+              ein Renner auf jedem Buffet und ich musste schon unzählige Male das Rezept weitergeben
+            </p>
+            <!-- Optional: collapsable content - to be done when enough time available -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center p-5">
+      <p class="lead">&copy; Copyright 2023</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const shareButton = document.getElementById('shareButton');
+      const recipeTitle = document.getElementById('recipeTitle').innerHTML;
+      const documentURL = document.URL;
+
+      shareButton.addEventListener('click', () => {
+        alert(`${documentURL}\n\nThe ${recipeTitle} recipe has been shared!`);
+      });
+    </script>
+  </body>
+</html>
